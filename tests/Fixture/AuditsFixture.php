@@ -33,6 +33,7 @@ class AuditsFixture extends TestFixture
         'created' => ['type' => 'timestamp', 'length' => null, 'default' => null, 'null' => false, 'comment' => null, 'precision' => null],
         'delta_count' => ['type' => 'integer', 'length' => 10, 'default' => '0', 'null' => false, 'comment' => null, 'precision' => null, 'unsigned' => null, 'autoIncrement' => null],
         'source_ip' => ['type' => 'string', 'length' => 255, 'default' => null, 'null' => true, 'collate' => null, 'comment' => null, 'precision' => null, 'fixed' => null],
+        'source_remote_port' => ['type' => 'integer', 'default' => null, 'null' => true, 'comment' => null],
         'source_url' => ['type' => 'string', 'length' => 255, 'default' => null, 'null' => true, 'collate' => null, 'comment' => null, 'precision' => null, 'fixed' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
@@ -57,6 +58,7 @@ class AuditsFixture extends TestFixture
             'created' => 1488907971,
             'delta_count' => 1,
             'source_ip' => 'Lorem ipsum dolor sit amet',
+            'source_remote_port' => 38612,
             'source_url' => 'Lorem ipsum dolor sit amet',
         ],
     ];

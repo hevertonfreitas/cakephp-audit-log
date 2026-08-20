@@ -142,6 +142,7 @@ class AuditableBehavior extends Behavior
             'entity_id' => $entity->id,
             'source_id' => $source['id'],
             'source_ip' => $source['ip'],
+            'source_remote_port' => $source['remote_port'],
             'source_url' => $source['url'],
             'description' => $source['description'],
         ];
@@ -258,6 +259,7 @@ class AuditableBehavior extends Behavior
             'entity_id' => $entity->id,
             'source_id' => $source['id'],
             'source_ip' => $source['ip'],
+            'source_remote_port' => $source['remote_port'],
             'source_url' => $source['url'],
             'description' => $source['description'],
         ];
@@ -298,6 +300,7 @@ class AuditableBehavior extends Behavior
         $defaults = [
             'id' => null,
             'ip' => null,
+            'remote_port' => null,
             'url' => null,
             'description' => null,
         ];

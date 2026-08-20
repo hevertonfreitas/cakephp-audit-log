@@ -19,6 +19,7 @@ use Cake\ORM\Entity;
  * @property int $delta_count
  * @property string $source_ip
  * @property string $source_url
+ * @property int $source_remote_port
  *
  * @property \AuditLog\Model\Entity\AuditDelta[] $audit_deltas
  */

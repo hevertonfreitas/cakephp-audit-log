@@ -37,6 +37,7 @@ class ArticlesTable extends Table
         return [
             'id' => '15',
             'ip' => '127.0.0.1',
+            'remote_port' => '38612',
             'url' => 'http://127.0.0.1/articles',
             'description' => 'Testing audit log',
         ];

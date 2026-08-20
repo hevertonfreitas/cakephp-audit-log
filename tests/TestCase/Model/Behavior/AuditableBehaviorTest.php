@@ -101,6 +101,7 @@ class AuditableBehaviorTest extends TestCase
 
         $this->assertEquals('15', $audit->source_id);
         $this->assertEquals('127.0.0.1', $audit->source_ip);
+        $this->assertEquals(38612, $audit->source_remote_port);
         $this->assertEquals('http://127.0.0.1/articles', $audit->source_url);
         $this->assertEquals('Testing audit log', $audit->description);
 
